@@ -29,3 +29,6 @@ The 'shangri-la' font can be downloaded from:https://www.fontsquirrel.com/fonts/
 
 #### Print the tickets
 The mailmerge option in word can be used to write multiple .png ticket images to one A4 sheet for printing. 
+
+### Packages required
+Networkx, Numpy, Pandas, Matplotlib
