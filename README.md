@@ -8,7 +8,7 @@ Unofficial Fan made expansion - Symbols & Graphics Copyright 2004-2016 Days of W
 ## Code to create custom ticket to ride game board colouring and tickets.
 
 #### Game board:
-Based on your gameboard place and track placements, the code will generate random colours for each section of track, based on probabilites from the Europe board game. Locamotive and tunnel random placement also returned (will be improved in future version).
+Based on your gameboard place and track placements, the code will generate random colours for each section of track, based on probabilites from the Europe board game. Locomotive and tunnel random placement also returned (will be improved in future version).
 
 #### Ticket generation:
 Using network X, a full graph network is created for the map. Using this all shortest path distances between places (nodes) can be easily calculated. Based on the approximate distribution of ticket lengths in the European version of the game.
@@ -30,5 +30,5 @@ The 'shangri-la' font can be downloaded from:https://www.fontsquirrel.com/fonts/
 #### Print the tickets
 The mailmerge option in word can be used to write multiple .png ticket images to one A4 sheet for printing. 
 
-### Packages required
-Networkx, Numpy, Pandas, Matplotlib
+### Packages required (python 3.6)
+Networkx, Numpy, Pandas, Matplotlib, 
