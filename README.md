@@ -22,6 +22,6 @@ Full example for creation of 'Singapore ticket to ride' game. I wrote this code 
 I created the board using an image editor (Photoshop), and then extracted the coordinates for each of my places to a .csv file. This can then be read into python easily.
 I laid the tracks (without colours) to calculate the best placement on the board, then wrote the length of these track segments to a second .csv file.
 
-The track scoring image came from: 
+The track scoring image came from: https://boardgamegeek.com/boardgame/9209/ticket-ride/expansions
 
 #### Print the tickets
