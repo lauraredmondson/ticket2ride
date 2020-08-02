@@ -24,4 +24,8 @@ I laid the tracks (without colours) to calculate the best placement on the board
 
 The track scoring image came from: https://boardgamegeek.com/boardgame/9209/ticket-ride/expansions
 
+#### font
+The 'shangri-la' font can be downloaded from:https://www.fontsquirrel.com/fonts/shangrilanf
+
 #### Print the tickets
+The mailmerge option in word can be used to write multiple .png ticket images to one A4 sheet for printing. 
