@@ -18,7 +18,7 @@ def add_locomotives(board_data,colours):
     board_data : pandas dataframe with 'Y' added to column locomotive if track have a locomotive
 
     '''
-    # add two locamotives for each
+    # add two locomotives for each
     
     # for each colour select randomly select route with 2 or 3 length
     for i in range(len(colours)):
@@ -33,7 +33,7 @@ def add_locomotives(board_data,colours):
         idx_choice = np.random.choice(all_indexes,2)
         
         # add 'Y' to the data dict
-        board_data.at[idx_choice, 'locamotive'] = 'Y'
+        board_data.at[idx_choice, 'locomotive'] = 'Y'
     
     return board_data
     
@@ -75,7 +75,7 @@ def add_tunnels(board_data, colours):
 def create_board_colouring(route_list ,route_len, double_routes_list, double_routes_len, seed):
     '''
     Create the colouring for the board based on europe game counts. 
-    Adds suggested locamotive and tunnel placement.
+    Adds suggested locomotive and tunnel placement.
     
     Based on Ticket to ride Europe colour data:
     Colours: between 22-23 of each (use 22 here)
@@ -84,9 +84,9 @@ def create_board_colouring(route_list ,route_len, double_routes_list, double_rou
     Colour tunnels: 2-3 of each
     Grey tunnels: 19 
     
-    Locamotives: 17    
+    locomotives: 17    
     
-    Currently only 1 tunnel for each colour, and 2 locamotives for each colour
+    Currently only 1 tunnel for each colour, and 2 locomotives for each colour
     
     
     Parameters
@@ -104,7 +104,7 @@ def create_board_colouring(route_list ,route_len, double_routes_list, double_rou
     Returns
     -------
     board_data : pandas dataframe with information about board 
-                 colouring, tunnel and locamotive placement.
+                 colouring, tunnel and locomotive placement.
     '''
     
     # add seed
@@ -133,7 +133,7 @@ def create_board_colouring(route_list ,route_len, double_routes_list, double_rou
     board_data['trackLength'] = route_len
     board_data['trackColour'] = ['None'] * len(route_list)
     board_data['tunnel'] = ['None'] * len(route_list)
-    board_data['locamotive'] = ['None'] * len(route_list)
+    board_data['locomotive'] = ['None'] * len(route_list)
     
     
     # create color for each track section between two nodes
